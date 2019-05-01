@@ -4,8 +4,7 @@ import { commercialAdVerification } from 'common/modules/experiments/tests/comme
 import { commercialAdVerificationQA } from 'common/modules/experiments/tests/commercial-ad-verification-qa.js';
 import { commercialCmpCustomise } from 'common/modules/experiments/tests/commercial-cmp-customise.js';
 import { commercialOutbrainTesting } from 'common/modules/experiments/tests/commercial-outbrain-testing.js';
-import { commercialConsentGlobalNoScroll } from 'common/modules/experiments/tests/commercial-consent-global-no-scroll.js';
-import { commercialConsentGlobalTallBanner } from 'common/modules/experiments/tests/commercial-consent-global-tall-banner.js';
+import { commercialConsentGlobalBanner } from 'common/modules/experiments/tests/commercial-consent-global-banner';
 import { askFourEarning } from 'common/modules/experiments/tests/contributions-epic-ask-four-earning';
 import { acquisitionsEpicAlwaysAskIfTagged } from 'common/modules/experiments/tests/acquisitions-epic-always-ask-if-tagged';
 import { adblockTest } from 'common/modules/experiments/tests/adblock-ask';
@@ -20,9 +19,8 @@ export const concurrentTests: $ReadOnlyArray<ABTest> = [
     commercialAdVerificationQA,
     commercialCmpCustomise,
     commercialOutbrainTesting,
-    commercialConsentGlobalNoScroll,
     adblockTest,
-    commercialConsentGlobalTallBanner,
+    commercialConsentGlobalBanner,
 ];
 
 export const epicTests: $ReadOnlyArray<EpicABTest> = [
